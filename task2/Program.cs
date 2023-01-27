@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿double [] CoordA = new double [3];
+double [] CoordB = new double [3];
+System.Console.Write("Введите значение X для координаты А: ");
+CoordA[0] = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Введите значение Y для координаты А: ");
+CoordA[1] = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Введите значение Z для координаты А: ");
+CoordA[2] = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine();
+System.Console.Write("Введите значение X для координаты B: ");
+CoordB[0] = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Введите значение Y для координаты B: ");
+CoordB[1] = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Введите значение Z для координаты B: ");
+CoordB[2] = Convert.ToInt32(Console.ReadLine());
+double S = Math.Sqrt(Math.Pow(CoordB[0] - CoordA[0], 2) + Math.Pow(CoordB[1] - CoordA[1], 2) + Math.Pow(CoordB[2] - CoordA[2], 2));
+System.Console.WriteLine($"Расстояние между точками равно - {S}");
